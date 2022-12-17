@@ -1,8 +1,8 @@
 app:
   api:
     url:
-      contract: "https://fwd-ws-dta01.fs.rabobank.nl/api/contractslocal"
-      thirdparty: "https://fwd-ws-dta01.fs.rabobank.nl/api/anagraficalocal"
+      contract: "https://fwd-ws-dta01.fs.rabobank.nl/api/contractslocaltes"
+      thirdparty: "https://fwd-ws-dta01.fs.rabobank.nl/api/anagraficalocaltes"
 
 user:
   truststore:
