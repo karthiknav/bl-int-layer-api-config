@@ -1,0 +1,16 @@
+app:
+  greeting.property: "Hello prod"
+  example-client.url: "https://rop-echo-service.${RABOPCF_LOCALDOMAIN}"
+
+rocs:
+  signalfx:
+    uri: https://ingest.eu0.signalfx.com
+    access-token: ${signalfx.accesstoken}
+
+management:
+  metrics:
+    tags:
+      applicationName: ${spring.application.name}
+      profile: 'prod'
+      env-foundation: ${RABOPCF_SYSTEM_ENV:none}${RABOPCF_LOCATION_SHORT:none}
+      instance: ${vcap.application.instance_index:-}

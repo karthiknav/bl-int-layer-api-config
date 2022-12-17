@@ -1,0 +1,8 @@
+spring.application.name: bl-int-layer-api
+
+spring.security.user:
+  name: admin
+  password: ${security.user.password}
+  roles: ACTUATOR
+
+management.endpoints.web.exposure.include: info, health, refresh, env

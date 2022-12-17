@@ -1,0 +1,22 @@
+app:
+  api:
+    url:
+      contract: "https://fwd-ws-dta01.fs.rabobank.nl/api/contractslocal"
+      thirdparty: "https://fwd-ws-dta01.fs.rabobank.nl/api/anagraficalocal"
+
+user:
+  truststore:
+    location: "ssl/cacerts"
+    passwd: "changeit"
+
+management:
+  endpoints.web.exposure.include: info, health, refresh, env
+  metrics.export.signalfx.enabled: false
+
+spring:
+  security.user:
+    name: admin
+    password: admin
+    roles: ACTUATOR
+  codec:
+    max-in-memory-size: 500KB
