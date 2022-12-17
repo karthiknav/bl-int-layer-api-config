@@ -1,5 +1,5 @@
 app:
-  greeting.property: "Hello"
+  greeting.property: "Hello in stage"
   example-client.url: "https://bl-int-layer-api-example-stub.${RABOPCF_LOCALDOMAIN}"
 
 management.metrics.export.signalfx.enabled: false
